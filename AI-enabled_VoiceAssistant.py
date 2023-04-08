@@ -17,7 +17,7 @@ def transcribe_audio_to_text(filename):
             return recognizer.recognize_google(audio)
         except:
             print("Skipping unknown error")
-            
+
 #function to generate response from chatgpt
 def generate_response(prompt):   #prompt is the text that we want to generate a response for
     response = openai.Completion.create(
